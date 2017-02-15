@@ -15,7 +15,7 @@
 %    You should have received a copy of the GNU General Public License
 %    along with BayFish.  If not, see <http://www.gnu.org/licenses/>.
 %
-% Stochastic dynamics of single-neuron early transcriptional response
+% BayFish pipeline
 % DATA: Translate a probability distribution vector to a matrix according 
 %       to its model structure.
 %

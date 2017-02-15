@@ -15,7 +15,7 @@
 %    You should have received a copy of the GNU General Public License
 %    along with BayFish.  If not, see <http://www.gnu.org/licenses/>.
 %
-% Stochastic dynamics of single-neuron early transcriptional response
+% BayFish pipeline
 % SIMULATE: Generate synthetic data.
 %
 % Created by Mariana Gómez-Schiavon

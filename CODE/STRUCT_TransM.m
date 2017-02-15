@@ -15,7 +15,7 @@
 %    You should have received a copy of the GNU General Public License
 %    along with BayFish.  If not, see <http://www.gnu.org/licenses/>.
 %
-% Stochastic dynamics of single-neuron early transcriptional response
+% BayFish pipeline
 % STRUCTURE: Call the appropiate function to create instructions for the 
 %            transition matrix according to the chosen model.
 %
