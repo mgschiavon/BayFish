@@ -5,7 +5,7 @@ BayFish is a computational pipeline to infer kinetic parameters of gene expressi
 
 ## Directories
 
-The `CODE` directory contains MATLAB code used to process the data (`{bash}DATA_*.m`), run the pipeline (`{bash}SIM_*.m`), and analyze (`{bash}FIG_*.m`) the BayFish results.
+The `CODE` directory contains MATLAB code used to process the data (`DATA_*.m`), run the pipeline (`SIM_*.m`), and analyze (`FIG_*.m`) the BayFish results.
 
 The `DATA` directory contains an example of data to be processed: smFISH measurements of the neuronal activity inducible gene *Npas4* in primary neurons (see Gómez-Schiavon *et al.*, 2017, *in preparation*).
 
