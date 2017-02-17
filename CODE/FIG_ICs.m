@@ -1,4 +1,4 @@
-% (C) Copyright 2017 Mariana Gómez-Schiavon
+% (C) Copyright 2017 Mariana GÃ³mez-Schiavon
 %
 %    This file is part of BayFish.
 %
@@ -18,7 +18,7 @@
 % BayFish pipeline
 % FIGURE: Calculate information criteria and compare them.
 %
-% Created by Mariana G�mez-Schiavon
+% Created by Mariana Gómez-Schiavon
 % June 2016
 %
 % FIG_ICs : Plot and compare BIC, AIC, and DIC metrics.
@@ -26,7 +26,7 @@
 %   [] = FIG_ICs(myGeneModel,myM,buT,sT,SaveFig)
 %   myGeneModel : Gene model to use (e.g. 'Fos(2S,300)')
 %   myM : Models (e.g. {'kON','kOFF','mu','kONkOFF','kONmu','kOFFmu','kONkOFFmu'})
-%   buT : Threshold around the maximum likelihood to define the burn-out 
+%   buT : Threshold around the maximum likelihood to define the burn in 
 %         period (e.g. 1.005)
 %   sT : Number of replicas (e.g. 3)
 %   SaveFig : If 1, save figure as MRW_[myGeneModel]_ICs.png.
