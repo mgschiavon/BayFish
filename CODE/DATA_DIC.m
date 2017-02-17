@@ -1,4 +1,4 @@
-% (C) Copyright 2017 Mariana Gómez-Schiavon
+% (C) Copyright 2017 Mariana GÃ³mez-Schiavon
 %
 %    This file is part of BayFish.
 %
@@ -18,7 +18,7 @@
 % BayFish pipeline
 % DATA: Calculate the Deviance Information Criterion (DIC).
 %
-% Created by Mariana G�mez-Schiavon
+% Created by Mariana Gómez-Schiavon
 % June 2016
 %
 % DATA_DIC : Calculate the Deviance Information Criterion (DIC) given the 
@@ -41,7 +41,7 @@
 %      in basal and stimulus conditions, [Basal,Stimulus] (e.g. 
 %      ParS.kON = [0.0051,0.1373]).
 %   myGeneModel : Gene model to use (e.g. 'Fos(2S,300)')
-%   buT : Threshold around the maximum likelihood to define the burn-out 
+%   buT : Threshold around the maximum likelihood to define the burn in 
 %         period (e.g. 1.005).
 %
 %   dic : Deviance Information Criterion.
