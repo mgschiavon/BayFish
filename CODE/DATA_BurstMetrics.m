@@ -1,4 +1,4 @@
-% (C) Copyright 2017 Mariana Gómez-Schiavon
+% (C) Copyright 2017 Mariana GÃ³mez-Schiavon
 %
 %    This file is part of BayFish.
 %
@@ -18,7 +18,7 @@
 % BayFish pipeline
 % DATA: Find burst metrics in MRW replicas.
 %
-% Created by Mariana G�mez-Schiavon
+% Created by Mariana Gómez-Schiavon
 % November 2016
 %
 % DATA_BurstMetrics : Find burst metrics in MRW replicas.
@@ -26,7 +26,7 @@
 %   [BM, PM] = DATA_BurstMetrics(myMRW,myS,buT)
 %   myMRW : Results files common name (e.g. 'MRW_Fos(2S,300)(kON)')
 %   myS : Replica numbers (e.g. [1:3])
-%   buT : Threshold around the maximum likelihood to define the burn-out 
+%   buT : Threshold around the maximum likelihood to define the burn in 
 %         period (e.g. 1.005)
 %   
 %   BM : Burst metrics structure.
