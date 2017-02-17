@@ -1,4 +1,4 @@
-% (C) Copyright 2017 Mariana Gómez-Schiavon
+% (C) Copyright 2017 Mariana GÃ³mez-Schiavon
 %
 %    This file is part of BayFish.
 %
@@ -16,17 +16,21 @@
 %    along with BayFish.  If not, see <http://www.gnu.org/licenses/>.
 %
 % BayFish pipeline
-% SIMULATE: Calculate the log-likelihood of observing the data x  for a 
-%           given model and set of kinetic parameters.
+% SIMULATE: Calculate the log-likelihood of observing the data x for a 
+%           given model and set of kinetic parameters for multiple time
+%           points.
 %           %%%% OPTIMIZED %%%% : e^A is calculated just once!
+%                                 This assumes that the difference  
+%                                 between time points is a multiple of 5 
+%                                 time units.
 %
-% Created by Mariana G�mez-Schiavon
+% Created by Mariana Gómez-Schiavon
 % May 2016
 %
-% SIM_logL : Starting from a model structure, and its kinetic parameters, 
+% SIM_logL_Opt : Starting from a model structure, and its kinetic parameters, 
 %            calculate the log-likelihood of observing the data x.
 %
-%   [M,L,eps] = SIM_logL(x,N,maxM,Par,ParS)
+%   [M,L,eps] = SIM_logL_Opt(x,N,maxM,Par,ParS)
 %   x : Observed data matrix where x(i,j) is the number of 
 %       individuals in de population with promoters in i-state and exactly 
 %       (j-1) mRNA molecules.
@@ -61,6 +65,7 @@
 %   See also DATA_Pxt.m
 %   See also DATA_P2M.m
 %   See also DATA_logL.m
+%   See also SIM_logL_SLOW.m
 
 function [M,L,eps] = SIM_logL_Opt(x,N,maxM,Par,ParS)
     pS = fieldnames(ParS);  % Parameters sensitive to stimulus
