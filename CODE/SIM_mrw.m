@@ -1,4 +1,4 @@
-% (C) Copyright 2017 Mariana Gómez-Schiavon
+% (C) Copyright 2017 Mariana GÃ³mez-Schiavon
 %
 %    This file is part of BayFish.
 %
@@ -18,11 +18,11 @@
 % BayFish pipeline
 % SIMULATE: Run Metropolis-Hastings & obtain "best" kinetic parameters.
 %
-% Created by Mariana G�mez-Schiavon
+% Created by Mariana Gómez-Schiavon
 % May 2016
 %
-% SIM_mrw : Starting from a model structure, and its kinetic parameters, 
-%            calculate the log-likelihood of observing the data x.
+% SIM_mrw : Run the Metropolis Random Walk algorithm over a particular 
+%           model and experimental data.
 %
 %   [] = SIM_mrw(myGeneModel,Par,mrw,cont)
 %   myGeneModel : Gene model to simulate (e.g. 'Fos(2S,300)')
@@ -53,6 +53,7 @@
 %   OUTPUT FILE : 'MRW_[myGene]([N],[maxM],[fieldnames(ParS)])(s[mrw.s]).mat'
 %
 %   See also SIM_logL_Opt.m
+%   See also SIM_logL_SLOW.m
 
 function [] = SIM_mrw(myGeneModel,Par,mrw,cont)
     % Model (N), maximum mRNA number to consider (maxM), and data (x):
