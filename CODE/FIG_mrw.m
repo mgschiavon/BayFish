@@ -1,4 +1,4 @@
-% (C) Copyright 2017 Mariana Gómez-Schiavon
+% (C) Copyright 2017 Mariana GÃ³mez-Schiavon
 %
 %    This file is part of BayFish.
 %
@@ -18,14 +18,14 @@
 % BayFish pipeline
 % FIGURE: Plot Metropolis-Hastings results.
 %
-% Created by Mariana G�mez-Schiavon
+% Created by Mariana Gómez-Schiavon
 % May 2016
 %
 % FIG_mrw : Plot Metropolis-Hastings results.
 %
 %   [] = FIG_mrw(myMRW,buT,Hc,Hb,cj,SaveFigs)
 %   myMRW : Results file name (e.g. 'MRW_Fos(2S,300)(kON)(s1)')
-%   buT : Threshold around the maximum likelihood to define the burn-out 
+%   buT : Threshold around the maximum likelihood to define the burn in 
 %         period (e.g. 1.005)
 %   Hc : Maximum population fraction for color bar in 2D-histogram plot 
 %        (e.g. 1/50).
@@ -68,7 +68,7 @@ function [] = FIG_mrw(myMRW,buT,Hc,Hb,cj,SaveFigs)
     L = sum(mrw.L,2);
     bu = find([L>=(max(L)*buT)],1);
     
-    %% Log-likelihood & burn-out
+    %% Log-likelihood & burn-in
     fig = figure();
     fig.Units = 'inches';
     fig.PaperPosition = [1 1 5 4];
