@@ -16,20 +16,22 @@
 %    along with BayFish.  If not, see <http://www.gnu.org/licenses/>.
 %
 % BayFish pipeline
-% SIMULATE: Calculate phenotype (i.e. probability distributions) for the given 
-%       model for each unique parameter set in the MRW runs.
+% SIMULATE: Calculate average and standard deviation of the 
+%       phenotypes (i.e. probability distributions) for the unique 
+%       parameter sets in the MRW runs of a given model.
 %
 % Created by Mariana G�mez-Schiavon
 % May 2016
 %
-% SIM_PhenE : Calculate phenotype (i.e. probability distributions) 
-%                  for the given model for each unique parameter set in 
-%                  the MRW runs.
+% SIM_PhenE : Calculate the average and standard deviation of the 
+%                  phenotype (i.e. probability distributions) 
+%                  for the unique parameter sets in the MRW runs
+%                  of a given model.
 %
 %   [] = SIM_PhenE(myMRW,myS,buT,pT)
 %   myMRW : Results files common name (e.g. 'MRW_Fos(2S,300)(kON)')
 %   myS : Replica numbers (e.g. [1:3])
-%   buT : Threshold around the maximum likelihood to define the burn-out 
+%   buT : Threshold around the maximum likelihood to define the burn in 
 %         period (e.g. 1.005)
 %   pT : Parameter resolution to define unique parameter sets (e.g. 0.01)
 %   
@@ -53,8 +55,8 @@ function [] = SIM_PhenE(myMRW,myS,buT,pT)
     myPS = size(x.t00,1);
 
     % Define unique parameter sets:
-%     [uP,iP] = DATA_UniquePar(myMRW,myS,buT,pT);
-%     length(uP)
+    [uP,iP] = DATA_UniquePar(myMRW,myS,buT,pT);
+    length(uP)
     
     % Calculate phenotype (probability distributions) for each unique set:
     %%% Define indexes:
@@ -70,14 +72,11 @@ function [] = SIM_PhenE(myMRW,myS,buT,pT)
     end
     clear i I1 mrw
     
-    %%% Define output:
-%     m = zeros(length(myT),myPS,maxM+1);
-%     sd = zeros(length(myT),myPS,maxM+1);
+    %%% Define output
+    m = zeros(length(myT),myPS,maxM+1);
+    sd = zeros(length(myT),myPS,maxM+1);
     
     %%% Iterate over unique sets:
-    load('TEMP_MRW_Npas4(2S,500)(kONkOFF)_EMs.mat')
-    iS = i+1;
-    
     for i = iS:length(uP)
         % Kinetic parameters:
         for ii = 1:size(myI,1)
