@@ -25,7 +25,7 @@
 % DATA_logL : Calculate the log-likelihood of observing the data x given the
 %             probability distribution M.
 %
-%   L = DATA_logL_2S(M,x)
+%   L = DATA_logL(M,x)
 %   M : Probability matrix where M(i,j) is the probability of 
 %       having the promoters state (i) and exactly (j-1) mRNA molecules.
 %   x : Observed data matrix where x(i,j) is the number of 
