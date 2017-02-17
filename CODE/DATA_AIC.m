@@ -1,4 +1,4 @@
-% (C) Copyright 2017 Mariana Gómez-Schiavon
+% (C) Copyright 2017 Mariana GÃ³mez-Schiavon
 %
 %    This file is part of BayFish.
 %
@@ -18,7 +18,7 @@
 % BayFish pipeline
 % DATA: Calculate the Akaike Information Criterion (AIC).
 %
-% Created by Mariana G�mez-Schiavon
+% Created by Mariana Gómez-Schiavon
 % June 2016
 %
 % DATA_AIC : Calculate the Akaike Information Criterion (AIC) given the 
@@ -26,7 +26,7 @@
 %            parameters (k); if you want the correction by finite sample 
 %            size (n), c = 1.
 %
-%   aic = DATA_AIC(maxL,k,n)
+%   aic = DATA_AIC(maxL,k,n,c)
 %   maxL : Maximized log-likelihood value.
 %   k    : Number of free parameters.
 %   n    : Sample size.
