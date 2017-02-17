@@ -1,4 +1,4 @@
-% (C) Copyright 2017 Mariana Gómez-Schiavon
+% (C) Copyright 2017 Mariana GÃ³mez-Schiavon
 %
 %    This file is part of BayFish.
 %
@@ -18,7 +18,7 @@
 % BayFish pipeline
 % FIGURE: Plot and compare MRW log-likelihood for different models.
 %
-% Created by Mariana G�mez-Schiavon
+% Created by Mariana Gómez-Schiavon
 % August 2016
 %
 % FIG_CompModels : Plot and compare MRW log-likelihood for different models.
@@ -28,7 +28,7 @@
 %   myM : Models (e.g.
 %   {'kON','kOFF','mu','kONkOFF','kONmu','kOFFmu','kONkOFFmu'}).
 %   myS : Replica numbers (e.g. [1:3])
-%   buT : Threshold around the maximum likelihood to define the burn-out 
+%   buT : Threshold around the maximum likelihood to define the burn in 
 %         period (e.g. 1.005)
 %   Hb : Number of bins for 2D-histogram plot (e.g. 25)
 %   xT : Flag to plot individual time measurements (1) or total
