@@ -56,7 +56,7 @@ int main(int argc, char** argv)
     Par pS = pB;              // ...after stimulus.
     // Data:
     double a = 0;             // If N='3S', threshold to define third TS state.
-    char* myDataCode = "Fos"; // Code for data to load.
+    char* myDataCode = "Npas4"; // Code for data to load.
     // Metropolis Random Walk (MRW) parameters:
     int mrwI = 3;             // Iterations.
     int mrwS = 1;             // Seed to use.
