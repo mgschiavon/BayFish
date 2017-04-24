@@ -58,8 +58,8 @@ int main(int argc, char** argv)
     double a = 0;             // If N='3S', threshold to define third TS state.
     char* myDataCode = "Npas4"; // Code for data to load.
     // Metropolis Random Walk (MRW) parameters:
-    int mrwI = 3;             // Iterations.
-    int mrwS = 1;             // Seed to use.
+    int mrwI = 100000;        // Iterations.
+    int mrwS = 7;             // Seed to use.
     // MRW sigma for parameter transition proposal in basal state:
     Par zigB;
     zigB.kON = 1e-5;
