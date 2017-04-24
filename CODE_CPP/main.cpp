@@ -1,5 +1,5 @@
 /*
- * (C) Copyright 2017 Mariana GÃ³mez-Schiavon
+ * (C) Copyright 2017 Mariana Gómez-Schiavon
  *
  *    This file is part of BayFish.
  *

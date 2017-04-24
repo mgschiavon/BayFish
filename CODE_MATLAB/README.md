@@ -1,7 +1,7 @@
 # BayFish - MATLAB version
 Bayesian inference of transcription dynamics from population snapshots of smFISH
 
-BayFish is a computational pipeline to infer kinetic parameters of gene expression from sparse single-molecule RNA fluorescence *in situ* hybridization (smFISH) data at multiple time points after induction. Given an underlying model of gene expression, BayFish uses a Markov Chanin Monte Carlo method to estimate the posterior probability of the model parameters and quantify the parameter uncertainty given the observed smFISH data.
+BayFish is a computational pipeline to infer kinetic parameters of gene expression from sparse single-molecule RNA fluorescence *in situ* hybridization (smFISH) data at multiple time points after induction. Given an underlying model of gene expression, BayFish uses a Markov Chain Monte Carlo method to estimate the posterior probability of the model parameters and quantify the parameter uncertainty given the observed smFISH data.
 
 NOTE: To use the C++ version, please refer to CODE_CPP/README.md
 
@@ -52,7 +52,7 @@ maxM = 300;                                 % Maximum mRNA number to consider.
 
 (2.1) If needed, create instructions for the model's transition matrix given the chosen limit for mRNA molecule number.
 
-(2.2) Calculate the transition matrixes given the model and its kinetic parameters.
+(2.2) Calculate the transition matrices given the model and its kinetic parameters.
 
 ```matlab
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,7 +74,7 @@ ParS.kON = [0.0051,0.1373]; % [Basal,Stimulus]
 % (2.1) Model structure:
     STRUCT_TransM(N,maxM);
     
-% (2.2) Calculate transition matrixes:
+% (2.2) Calculate transition matrices:
     pS = fieldnames(ParS);
     % Basal conditions:
     for i1 = 1:length(pS)
@@ -91,7 +91,7 @@ ParS.kON = [0.0051,0.1373]; % [Basal,Stimulus]
 
 ### (3) Calculate probability distributions
 
-(3.1) Calculate the probability distributions for the chosen time points the transition matrixes.
+(3.1) Calculate the probability distributions for the chosen time points the transition matrices.
 
 (3.2) Transform the probability distributions vectors to a matrix form where M(i,j) is the probability of having the promoters state (i) and exactly (j-1) mRNA molecules.
 
@@ -119,7 +119,7 @@ clear x
     end
     clear t tt
     
-% (3.2) Transform probability distributions vectors to matrixes:
+% (3.2) Transform probability distributions vectors to matrices:
     for t = 1:length(myT)
         M.(myT{t}) = DATA_P2M(N,P.(myT{t}));
     end

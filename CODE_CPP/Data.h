@@ -1,5 +1,5 @@
 /*
- * (C) Copyright 2017 Mariana GÃ³mez-Schiavon
+ * (C) Copyright 2017 Mariana Gómez-Schiavon
  *
  *    This file is part of BayFish.
  *
@@ -35,7 +35,7 @@
  *      loadData(int N, int maxM, double a, char* myDataCode, int t) : Read 
  *          "myData_[myDataCode_t[t]_List.txt" file and load it in the data 
  *          matrix.
- *          int N : Model familiy, i.e. number of states (e.g. 2).
+ *          int N : Model family, i.e. number of states (e.g. 2).
  *          int maxM : Maximum mRNA number to consider (e.g. 300).
  *          double a : If N='3S', threshold to define third TS state (e.g. 10).
  *          char* myDataCode : Code for specific data file (e.g. "Fos").

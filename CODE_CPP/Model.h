@@ -1,5 +1,5 @@
 /*
- * (C) Copyright 2017 Mariana GÃ³mez-Schiavon
+ * (C) Copyright 2017 Mariana Gómez-Schiavon
  *
  *    This file is part of BayFish.
  *
@@ -42,7 +42,7 @@
  *          [#ON promoters, #ONs promoters, #mRNA molecules] if N=3.
  *      mat R : Lists the positions of the transition matrix with 
  *          propensities different from zero and the kind of reaction occuring.
- *      int N : Model familiy, i.e. number of states (e.g. 2).
+ *      int N : Model family, i.e. number of states (e.g. 2).
  *      int maxM : Maximum mRNA number to consider (e.g. 300).
  * 
  *      mat TransM(Par p) : Given the input parameters and previously defined N 
