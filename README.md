@@ -21,6 +21,8 @@ If you use this code or the data associated with it please cite:
 
 Gómez-Schiavon *et al.* (2017); https://doi.org/10.1101/109603.
 
+Latest release: [![DOI](https://zenodo.org/badge/82009613.svg)](https://zenodo.org/badge/latestdoi/82009613)
+
 ## Copyright
 
 (C) Copyright 2017 Mariana Gómez-Schiavon
