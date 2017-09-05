@@ -9,7 +9,7 @@ The `CODE_MATLAB` directory contains MATLAB code used to process the data (`DATA
 
 The `CODE_CPP` directory contains C++ code used to run the BayFish pipeline (`main.cpp`), as well as the required function files (`*.h`).
 
-The `DATA` directory contains an example of data to be processed: smFISH measurements of the neuronal activity inducible gene *Npas4* in primary neurons (see Gómez-Schiavon *et al.*, 2017; https://doi.org/10.1101/109603).
+The `DATA` directory contains an example of data to be processed: smFISH measurements of the neuronal activity inducible gene *Npas4* in primary neurons (see Gómez-Schiavon *et al.*, 2017; https://doi.org/10.1186/s13059-017-1297-9).
 
 ## Instructions
 To use the MATLAB version, please refer to CODE_MATLAB/README.md
