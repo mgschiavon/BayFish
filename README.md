@@ -19,7 +19,7 @@ To use the C++ version, please refer to CODE_CPP/README.md
 
 If you use this code or the data associated with it please cite:
 
-Gómez-Schiavon *et al.* (2017); https://doi.org/10.1101/109603.
+Gómez-Schiavon *et al.* (2017); https://doi.org/10.1186/s13059-017-1297-9.
 
 Latest release: [![DOI](https://zenodo.org/badge/82009613.svg)](https://zenodo.org/badge/latestdoi/82009613)
 
