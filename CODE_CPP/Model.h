@@ -216,7 +216,6 @@ public:
             {
                 A(row,col) = mu0*(2-S(col,0)) + mu*S(col,0);
             }
-            else if(R(i,0)=4)   // mRNA degradation
             {
                 A(row,col) = d*S(col,1);
             }
