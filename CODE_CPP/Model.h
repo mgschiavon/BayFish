@@ -306,7 +306,7 @@ public:
                 A(row,col) = -(kON*(2-S(col,0)-S(col,1))) // Promoter activation (OFF->ON)
                         -(kOFF*S(col,0))      // Promoter deactivation (ON->OFF)
                         -(kONs*S(col,0))      // Promoter super-activation (ON->ONs)
-                        -(kOFF*S(col,1))      // Promoter super-deactivation (ONs->ON)
+                        -(kOFFs*S(col,1))     // Promoter super-deactivation (ONs->ON)
                         -(mu0*(2-S(col,0)-S(col,1))) // mRNA synthesis from OFF promoters
                         -(mu*S(col,0))        // mRNA synthesis from ON promoters
                         -(muS*S(col,1))       // mRNA synthesis from ONs promoters
